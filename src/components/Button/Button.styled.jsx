@@ -16,8 +16,7 @@ export const Btn = styled.button`
   border-radius: ${props => props.theme.radii.normal};
 
   font-size: ${props => props.theme.fontSizes.m}
-  color:  ${props => props.theme.colors.accent};
-  text-shadow: ${props => props.theme.shadows.textShadow};
+  color:  ${props => props.theme.colors.secondary};
 
   background-color: ${props => props.theme.colors.secondary};
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -25,6 +24,8 @@ export const Btn = styled.button`
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
+
+  cursor: pointer;
 
   &:hover,
   &:focus {
